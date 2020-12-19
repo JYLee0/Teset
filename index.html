@@ -18,16 +18,16 @@
 </script>
 
 <script>
-try {
+try { 
   function sendLinkDefault() {
     Kakao.init('3ec06eaf04c2810d298a84ef55bfe955')
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '말라위의 나이팅게일'
-        description: '#선교 #순장 #하늘소망',
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
         imageUrl:
-          'https://t1.daumcdn.net/cfile/tistory/9954284C5F9F9C4605',
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
         link: {
           mobileWebUrl: 'https://developers.kakao.com',
           webUrl: 'https://developers.kakao.com',
@@ -40,14 +40,14 @@ try {
       },
       buttons: [
         {
-          title: '자세히보기',
+          title: '웹으로 보기',
           link: {
             mobileWebUrl: 'https://developers.kakao.com',
             webUrl: 'https://developers.kakao.com',
           },
         },
         {
-          title: '자세히보기',
+          title: '앱으로 보기',
           link: {
             mobileWebUrl: 'https://developers.kakao.com',
             webUrl: 'https://developers.kakao.com',
@@ -56,9 +56,9 @@ try {
       ],
     })
   }
-; window.kakaoDemoCallback && window.kakaoDemoCallback() }
+; window.kakaoDemoCallback && window.kakaoDemoCallback() } 
 catch(e) { window.kakaoDemoException && window.kakaoDemoException(e) }
 </script>
-   
+    
 </body>
 </html>
