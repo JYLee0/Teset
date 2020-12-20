@@ -5,11 +5,21 @@
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-    <input type="button" onClick="sendLinkCustom();" value="Custom"/>
+    <input type="button" onClick="sendLinkCustom1();" value="새의 깃털"/>
+    <input type="button" onClick="sendLinkCustom2();" value="진짜 친구"/>
     <input type="button" onClick="sendLinkDefault();" value="Default"/>
 
 <script type="text/javascript">
-    function sendLinkCustom() {
+    function sendLinkCustom1() {
+        Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
+        Kakao.Link.sendCustom({
+            templateId: 42983
+        });
+    }
+</script>    
+    
+<script type="text/javascript">
+    function sendLinkCustom2() {
         Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
         Kakao.Link.sendCustom({
             templateId: 43004
