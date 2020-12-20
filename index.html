@@ -5,21 +5,12 @@
 <script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-    <input type="button" onClick="sendLinkCustom(42983);" value="색이 결코 바래지 않는 새의 깃털"/>
+    <input type="button" onClick="sendLinkCustom1();" value="색이 결코 바래지 않는 새의 깃털"/>
     <br>
     <br>
     <input type="button" onClick="sendLinkCustom2();" value="어떤 친구가 진짜 친구일까?"/>
     <br>
-
-<script type="text/javascript">
-    function sendLinkCustom(String tmId) {
-        Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
-        Kakao.Link.sendCustom({
-            templateId: tmId
-        });
-    }
-</script>
-    
+   
 <script type="text/javascript">
     function sendLinkCustom1() {
         Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
