@@ -12,6 +12,13 @@
     <br>
     <input type="button" onClick="sendLinkCustom2();" value="어떤 친구가 진짜 친구일까?"/>
     <br>
+    <br>
+    <input type="button" onClick="sendLinkCustom3();" value="돈으로 살 수 없는 세가지"/>
+    <br>
+    <br>
+    <input type="button" onClick="sendLinkCustom4();" value="불안감에 시달리는 남자들"/>
+    <br>
+    <br>
      
 <script type="text/javascript">
     function sendLinkCustom1() {
@@ -25,6 +32,18 @@
         Kakao.Link.sendCustom({templateId: 43004});
     }
 </script>    
+<script type="text/javascript">
+    function sendLinkCustom3() {
+        Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
+        Kakao.Link.sendCustom({templateId: 43191});
+    }
+</script>  
+<script type="text/javascript">
+    function sendLinkCustom4() {
+        Kakao.init("3ec06eaf04c2810d298a84ef55bfe955");
+        Kakao.Link.sendCustom({templateId: 43190});
+    }
+</script>  
 </body>
      
 </html>
